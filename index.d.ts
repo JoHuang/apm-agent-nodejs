@@ -109,6 +109,9 @@ declare class Agent implements Taggable, StartSpanFn {
 
   // Utils
   logger: Logger;
+
+  // Custom metrics
+  registerCustomMetric(name: string, callback: Function): void;
 }
 
 declare class GenericSpan implements Taggable {
